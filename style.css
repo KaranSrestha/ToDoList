@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom right, rgb(47, 43, 120), rgb(87, 51, 87)) no-repeat;
+}
+.container, .input{
+    border-radius: 8px;
+    max-width: 375px;
+    width: 100%;
+    height: fit-content;
+    margin: 25px;
+}
+.input{
+    background-color: #ffffff;
+    padding: 25px;
+    margin: 0;
+    margin-bottom: 25px;
+}
+.head{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.head h2{
+    font-size: 20px;
+    font-weight: 800;
+    color: #232323;
+    text-shadow: 0 0 1px #252525;
+}
+.container .todoitem{
+    height: 45px;
+    margin-bottom: 15px;
+    border-radius: 24px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.todoitem > input{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    outline: none;
+    font-size: 14px;
+    padding-left: 22px;
+    background-color: #ffffff;
+}
+.todoitem input:focus{
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+    /* background-color: #ebebeb; */
+}
+.todoitem button{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100px;
+    border-radius: 22px;
+    background-color: rgb(255, 123, 0);
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+}
+.todoitem button:hover{
+    background-color: rgb(233, 122, 19);
+}
+.items{
+    list-style: none;
+    width: 100%;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.items li{
+    background-color: #ffffff;
+    border-radius: inherit;
+    width: 100%;
+    padding: 15px 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.items .icon{
+    content: "";
+    width: 5px;
+    height: 5px;
+    outline-style: solid;
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.selected{
+    background-color: #232323;
+}
+.line{
+    text-decoration: line-through;
+}
+.items .del{
+    position: absolute;
+    right: 25px;
+    cursor: pointer;
+    color: gray;
+}
+.items .del:hover{
+    color: black;
+}

@@ -1,0 +1,29 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>To do list</title>
+</head>
+<body>
+    <div class="container">
+        <div class="input">
+            <div class="head">
+                <h2>To-Do List</h2><span class="material-symbols-outlined" style="color: rgb(142, 142, 142);">lists</span>
+            </div>
+            <div class="todoitem">
+                <input type="text" placeholder="Add your task" id="text">
+                <button class="add" id="addBtn">Add</button>
+            </div>
+        </div>
+        <ul class="items">
+            <!-- Items will be dynamically added here -->
+        </ul>
+    </div>
+    <script src="https://kit.fontawesome.com/8ed98164fe.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
